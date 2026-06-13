@@ -248,6 +248,14 @@
             display: flex;
             flex-direction: column;
             height: 100%;
+            cursor: pointer;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+            box-shadow: 0 10px 25px rgba(56, 189, 248, 0.15);
         }
 
         .project-content {
@@ -514,7 +522,7 @@
         <div class="container">
             <h2 class="section-title">Projets </h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <a href="https://github.com/oualid122/projet-ML" target="_blank" class="project-card">
                     <div class="project-content">
                         <h3>Classification d'Images (ML)</h3> 
                         <p>Conception et implémentation d'un pipeline complet de traitement et de classification pour une base de données de 30 000 images RGB. Utilisation de modèles de Machine Learning (KNN, Régression Logistique) et Deep Learning (CNN). Analyse des données via t-SNE et participation à un challenge compétitif Codalab.</p> 
@@ -525,8 +533,8 @@
                             <span class="tag">t-SNE</span>
                         </div>
                     </div>
-                </div>
-                <div class="project-card">
+                </a>
+                <a href="https://github.com/oualid122/Jeu-de-parcours-des-graphes" target="_blank" class="project-card">
                     <div class="project-content">
                         <h3>Jeu de Parcours de Graphes</h3> 
                         <p>Projet de stage réalisé au Laboratoire universitaire d'Angers. Modélisation mathématique et informatique d'un jeu inspiré de Saute-mouton et du jeu de Nim. Gestion et manipulation de structures complexes de graphes avec NetworkX, calcul des stratégies via NumPy, et visualisation sous Matplotlib.</p> 
@@ -537,7 +545,7 @@
                             <span class="tag">Matplotlib</span>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
